@@ -1,0 +1,9 @@
+useDynLib(metahdep)
+
+export(metahdep.FEMA, metahdep.format, metahdep.HBLM, metahdep, metahdep.REMA, getPLM.es, metahdep.list2dataframe, LinMod.MetAn.dep.REMA, LinMod.REMA.dep, LinMod.REMA.delta.split, LinMod.HBLM.fast.dep, new.LinMod.HBLM.fast.dep.delta.split, LinMod.MetAn.dep.FEMA, metahdep.check.X, get.M, tr, id, center.columns, mod, get.varsigma.v )
+
+
+
+
+
+
