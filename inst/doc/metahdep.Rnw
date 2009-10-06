@@ -32,11 +32,11 @@
 
 The \Rpackage{metahdep} package provides tools to conduct a
 meta-analysis of effect size estimates, particularly when
-hierarchical dependence is present (Stevens and Taylor, 2008). The
+hierarchical dependence is present (Stevens and Taylor, 2009). The
 package includes convenient commands for the meta-analysis of gene
 expression studies.  We assume the reader is familiar with
 meta-analysis of effect size estimates, and here adopt the framework
-used in Stevens and Taylor (2008). This package vignette provides a
+used in Stevens and Taylor (2009). This package vignette provides a
 guide for the use of these tools, using two examples (Sections
 \ref{Ex1} and \ref{Ex2}). The first example, in Section 2, shows the
 main utility of the \Rpackage{metahdep} package for the
@@ -47,7 +47,9 @@ first example, but is not necessary for the use of the tools in this
 package, as demonstrated by the second example, in Section 3, which
 involves foreign language learning.\\
 
-{\bf Note:} If you use this package please cite Stevens and Taylor (2008).
+{\bf Note:} If you use this package for gene expression studies,
+please cite Stevens and Nicholas (2009).  If you use this package
+for general applications, please cite Stevens and Taylor (2009).
 
 \section{Meta-Analysis of Gene Expression Studies}
 \label{Ex1}
@@ -56,17 +58,17 @@ The tools in the \Rpackage{metahdep} package can be used to
 systematically combine the results of multiple gene expression
 studies, accounting for both sampling and hierarchical dependence
 among studies, and accounting for fundamental differences between
-studies.  Sampling dependence occurs when two (or more) effect size
-estimates are based on the same sample of data.  Hierarchical
-dependence occurs when two (or more) studies are conducted by the
-same lab or research team.  The \Rpackage{metahdep} package is
-specifically designed for cases where each study reports for each
-gene an effect size estimate of differential expression between the
-same two conditions. In the example that follows, we describe a
-hypothetical group of similar gene expression studies, and refer to
-a ``Tissue'' difference among studies.  In reality this could be any
-covariate describing differences among studies, and multiple
-covariates are possible.
+studies (Stevens and Nicholas, 2009).  Sampling dependence occurs
+when two (or more) effect size estimates are based on the same
+sample of data. Hierarchical dependence occurs when two (or more)
+studies are conducted by the same lab or research team.  The
+\Rpackage{metahdep} package is specifically designed for cases where
+each study reports for each gene an effect size estimate of
+differential expression between the same two conditions. In the
+example that follows, we describe a hypothetical group of similar
+gene expression studies, and refer to a ``Tissue'' difference among
+studies.  In reality this could be any covariate describing
+differences among studies, and multiple covariates are possible.
 
 For purposes of illustration in this vignette, we suppose that four
 separate studies have been conducted, each using microarrays to look
@@ -200,7 +202,7 @@ comparisons are made, one for each tissue, using data from the same
 study.  The Appendix of this vignette summarizes this covariance
 estimation in the probe-level model context.  This type of sampling
 dependence can be accounted for in the meta-analysis, as discussed
-in Stevens and Taylor (2008).
+in Stevens and Taylor (2009).
 
 The effect size estimates from this probe-level model, as well as
 the appropriate variances and covariances, are calculated by the
@@ -378,7 +380,7 @@ HBLM.ds <- metahdep(HGU.prep.list, method="HBLM", genelist=gene.subset, delta.sp
 In these hierarchical Bayes meta-analysis models, we use
 \Rfunction{two.sided=TRUE} so that the posterior probabilities are
 converted to two-sided p-values, for more traditional
-interpretation, as in Stevens and Taylor (2008).
+interpretation, as in Stevens and Taylor (2009).
 
 Each call to the \Rfunction{metahdep} function returns a
 \Rfunction{data.frame} object with summaries of the meta-analysis
@@ -408,13 +410,14 @@ plot(pvals, main='Comparison of Intercept P-values from Meta-Analysis',pch=16,ce
 \label{Ex2}
 
 The statistical methods used by the \Rpackage{metahdep} package are
-described in Stevens and Taylor (2008), which focused on a meta-analytic review of 13
-experiments with 18 study reports all involving the effect of
-native-language (L1) vocabulary aids (e.g., glossing) on second language (L2) reading
-comprehension.  The data from that paper are included in the
-\Rpackage{metahdep} package for purposes of demonstration.  The sample code in this
-section of the package vignette reproduces the main results
-of Stevens and Taylor (2008).
+described in Stevens and Taylor (2009), which focused on a
+meta-analytic review of 13 experiments with 18 study reports all
+involving the effect of native-language (L1) vocabulary aids (e.g.,
+glossing) on second language (L2) reading comprehension.  The data
+from that paper are included in the \Rpackage{metahdep} package for
+purposes of demonstration.  The sample code in this section of the
+package vignette reproduces the main results of Stevens and Taylor
+(2009).
 
 A summary of the glossing data is provided in the \Rfunction{gloss.Table1}
 data frame within the \Rfunction{gloss} data set (see output in Table \ref{Table:gloss1}).
@@ -451,8 +454,8 @@ theta <- c.correct * (y2-y1)/sp
 
 The covariance matrix corresponding to the vector of unbiased effect
 size estimates is constructed next, with some off-diagonal elements
-nonzero because of the sampling dependence (as described in
-Stevens and Taylor, 2008).  First get the diagonal elements of the matrix:
+nonzero because of the sampling dependence (as described in Stevens
+and Taylor, 2009).  First get the diagonal elements of the matrix:
 
 <<>>=
 pE <- c.correct^2*dfE/(dfE-2)
@@ -460,14 +463,14 @@ var.theta <- pE*(1/n2+1/n1) + (pE-1)*theta^2
 V <- diag(var.theta)
 @
 
-As described in Stevens and Taylor (2008), sampling dependence exists among effect
-size estimates in both the Baumann and Joyce studies.  As currently
-ordered, sampling dependence exists between studies 2 and 3
-(Baumann), between studies 4 and 5 (Baumann), and among studies
-10-12 (Joyce).  The off-diagonal elements of the covariance matrix
-can be constructed accordingly.  This resulting matrix \Rfunction{V}
-is equivalent to the matrix \Rfunction{gloss.V} within the
-\Rfunction{gloss} data set.
+As described in Stevens and Taylor (2009), sampling dependence
+exists among effect size estimates in both the Baumann and Joyce
+studies. As currently ordered, sampling dependence exists between
+studies 2 and 3 (Baumann), between studies 4 and 5 (Baumann), and
+among studies 10-12 (Joyce).  The off-diagonal elements of the
+covariance matrix can be constructed accordingly.  This resulting
+matrix \Rfunction{V} is equivalent to the matrix \Rfunction{gloss.V}
+within the \Rfunction{gloss} data set.
 
 <<>>=
 V[2,3] <- V[3,2] <- (pE[2]-1)*theta[2]*theta[3]
@@ -540,7 +543,7 @@ necessary numerical integrations of the hierarchical Bayes model.
 The results from these various meta-analysis models can be
 summarized. The following code produces the output shown in Table
 \ref{Table:gloss2}; this is a reproduction of Table 4 of Stevens and
-Taylor (2008).
+Taylor (2009).
 
 <<eval=FALSE>>=
 r1 <- round(c(FEMA.indep$beta.hats[1], FEMA.indep$beta.hat.p.values[1],NA,NA),4)
@@ -616,10 +619,15 @@ Table2
    ``Meta-Analysis of Microarrays:  Interstudy Validation of Gene Expression Profiles Reveals Pathway Dysregulation in Prostate Cancer,''
    {\it Cancer Research} 62:4427-4433.
 
- \bibitem{JEBS2008}
-     Stevens, J.R. and Taylor, A.M. (to appear; published OnlineFirst March 25, 2008),
+ \bibitem{Bioinf2009}
+     Stevens, J.R. and Nicholas, G. (2009),
+     ``metahdep: Meta-analysis of hierarchically dependent gene expression studies'',
+     {\it Bioinformatics} 25(19):2619-2620.
+
+ \bibitem{JEBS2009}
+     Stevens, J.R. and Taylor, A.M. (2009),
      ``Hierarchical Dependence in Meta-Analysis,''
-     {\it Journal of Educational and Behavioral Statistics}.
+     {\it Journal of Educational and Behavioral Statistics} 34(1):46-73.
 
 \end{thebibliography}
 

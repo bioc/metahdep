@@ -23,6 +23,16 @@
   }
 }
 
+\references{
+
+    Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+    See also the \emph{metahdep} package vignette.
+
+}
+
+
 
 \examples{
 

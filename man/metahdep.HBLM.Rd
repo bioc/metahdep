@@ -44,20 +44,23 @@ When a meta-analysis is to be performed for gene expression data (on a per-gene 
 
 \references{
 
-DuMouchel W. H. and Harris J. H., 1983, \emph{Bayes methods for combining the results of
-cancer studies in humans and other species}, \emph{Journal of the American Statistical Association},
+DuMouchel W. H. and Harris J. H. (1983), Bayes methods for combining the results of
+cancer studies in humans and other species, \emph{Journal of the American Statistical Association},
 78(382), 293-308.
 
-DuMouchel W.H. and Normand S.-L., 2000, \emph{Computer-modeling and graphical strategies
-for meta-analysis}, in D. K. Stangl and D. A. Berry (Eds.), \emph{Meta-analysis in medicine
+DuMouchel W.H. and Normand S.-L. (2000), Computer-modeling and graphical strategies
+for meta-analysis, in D. K. Stangl and D. A. Berry (Eds.), \emph{Meta-analysis in medicine
 and health policy}, pp. 127-178. New York: Marcel Dekker.
 
-Stevens J.R. and Doerge R.W., 2005, \emph{A Bayesian and Covariate Approach to Combine Results
-   from Multiple Microarray Studies}, Proceedings of Conference on Applied Statistics in
-   Agriculture.
+Stevens J.R. and Doerge R.W. (2005), A Bayesian and Covariate Approach to Combine Results
+   from Multiple Microarray Studies, \emph{Proceedings of Conference on Applied Statistics in
+   Agriculture}, pp. 133-147.
 
-Stevens J.R. and Taylor A.M. \emph{Hierarchical Dependence in Meta-Analysis}, to appear,
-    \emph{Journal of Educational and Behavioral Statistics}.
+Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+Stevens J.R. and Taylor A.M. (2009), Hierarchical Dependence in Meta-Analysis, 
+   \emph{Journal of Educational and Behavioral Statistics}, 34(1):46-73.
 
 See also the \emph{metahdep} package vignette.
 }

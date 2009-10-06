@@ -27,6 +27,17 @@ Each element of the returned list is a \code{metaprep} object summarizing effect
 }
 \author{ John R. Stevens, Gabriel Nicholas }
 
+\references{
+
+    Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+    See also the \emph{metahdep} package vignette.
+
+}
+
+
+
 \examples{
 ##  load a pre-made list of ES.obj's and newnames data.frame.  These objects hold
 ##  data in a format suitable for use in the metahdep.format function.

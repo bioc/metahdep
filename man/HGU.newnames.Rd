@@ -24,6 +24,18 @@ The \code{new.name} is a 'common' identifier, e.g., an Entrez Gene ID.  Differen
 This \code{newnames} argument is meant to facilitate the matching of gene information across different chip types.
 See the \emph{metahdep} package vignette for more details on the construction of this object.
 }
+
+\references{
+
+    Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+    See also the \emph{metahdep} package vignette.
+
+}
+
+
+
 \examples{
 data(HGU.newnames)
 head(HGU.newnames)

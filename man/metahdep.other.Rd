@@ -47,10 +47,22 @@ Miscellaneous functions used internally by the \emph{metahdep} package's main fu
 
 }
 \author{ John R. Stevens, Gabriel Nicholas }
+
+
 \references{
-  Stevens J.R. and Taylor A.M. \emph{Hierarchical Dependence in Meta-Analysis}, to appear,
-    \emph{Journal of Educational and Behavioral Statistics}.
+
+    Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+   Stevens J.R. and Taylor A.M. (2009), Hierarchical Dependence in Meta-Analysis, 
+     \emph{Journal of Educational and Behavioral Statistics}, 34(1):46-73.
+
+    See also the \emph{metahdep} package vignette.
+
 }
+
+
+
 \examples{
 ## Create the M matrix for the glossing example
 ## - here, studies 2-5 are one hierarchically dependent group (Baumann),

@@ -33,6 +33,16 @@ The idea is that results from different studies from the same lab might be depen
 This is an example object that is to be passed as an argument to the \code{metahdep.format()} function.
 }
 
+\references{
+
+    Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+    See also the \emph{metahdep} package vignette.
+
+}
+
+
 \examples{
 data(HGU.DifExp.list)
 head(HGU.DifExp.list[[1]]@ES.mat)

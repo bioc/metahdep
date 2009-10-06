@@ -31,19 +31,24 @@ metahdep(prep.list, genelist = NULL, method = "HBLM", n = 10, m = 10,
 }
 
 
+\author{ John R. Stevens, Gabriel Nicholas }
+
+
 \references{
 
-  Stevens J.R. and Doerge R.W., 2005, \emph{A Bayesian and Covariate Approach to Combine Results
-   from Multiple Microarray Studies}, Proceedings of Conference on Applied Statistics in
-   Agriculture.
+  Stevens J.R. and Doerge R.W. (2005), A Bayesian and Covariate Approach to Combine Results
+   from Multiple Microarray Studies, \emph{Proceedings of Conference on Applied Statistics in
+   Agriculture}, pp. 133-147.
 
-  Stevens J.R. and Taylor A.M. \emph{Hierarchical Dependence in Meta-Analysis}, to appear,
-    \emph{Journal of Educational and Behavioral Statistics}.
+  Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+  Stevens J.R. and Taylor A.M. (2009), Hierarchical Dependence in Meta-Analysis, 
+   \emph{Journal of Educational and Behavioral Statistics}, 34(1):46-73.
 
   See also the \emph{metahdep} package vignette.
 }
 
-\author{ John R. Stevens, Gabriel Nicholas }
 \examples{
 data(HGU.prep.list)
 

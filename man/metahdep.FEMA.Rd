@@ -31,12 +31,12 @@ When a meta-analysis is to be performed for gene expression data (on a per-gene 
 
 \references{
 
-  Hedges L. V. and Olkin I, 1985, \emph{Statistical methods for meta-analysis}, San Diego, CA: Academic Press.
+  Hedges L. V. and Olkin I (1985), \emph{Statistical methods for meta-analysis}, San Diego, CA: Academic Press.
 
-  Stevens J.R. and Doerge R.W., 2005, \emph{ Combining Affymetrix Microarray Results}, \emph{BMC Bioinformatics} 2005, 6:57.
+  Stevens J.R. and Doerge R.W. (2005), Combining Affymetrix Microarray Results, \emph{BMC Bioinformatics} 6:57.
 
-  Stevens J.R. and Taylor A.M. \emph{Hierarchical Dependence in Meta-Analysis}, to appear,
-    \emph{Journal of Educational and Behavioral Statistics}.
+  Stevens J.R. and Taylor A.M. (2009), Hierarchical Dependence in Meta-Analysis, 
+   \emph{Journal of Educational and Behavioral Statistics}, 34(1):46-73.
 
   See also the \emph{metahdep} package vignette.
 

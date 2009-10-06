@@ -17,6 +17,18 @@ Each element of \code{HGU.prep.list} is a gene-specific object of class \code{me
 \code{HGU.prep.list} is an example object used as an argument to the \code{metahdep()} function.  
 The individual elements of this object can be extracted and passed as arguments to the more general meta-analysis functions, \code{metahdep.HBLM()}, \code{metahdep.REMA()}, and \code{metahdep.FEMA()}.
 }
+
+\references{
+
+    Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
+
+    See also the \emph{metahdep} package vignette.
+
+}
+
+
+
 \examples{
 data(HGU.prep.list)
 

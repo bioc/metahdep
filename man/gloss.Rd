@@ -28,7 +28,15 @@ This data set summarizes 13 experiments with 18 study reports, all involving the
 
 The intended use for these data is to demonstrate the methods coded in the \emph{metahdep} package.
 }
-\references{ Stevens J.R. and Taylor A.M. Hierarchical Dependence in Meta-Analysis. To appear, Journal of Educational and Behavioral Statistics. }
+\references{ 
+
+ Stevens J.R. and Taylor A.M. (2009), Hierarchical Dependence in Meta-Analysis, 
+   \emph{Journal of Educational and Behavioral Statistics}, 34(1):46-73.
+
+ See also the \emph{metahdep} package vignette.
+
+
+ }
 \examples{
 data(gloss)
 # Look at Table 1

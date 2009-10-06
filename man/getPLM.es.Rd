@@ -29,10 +29,13 @@ This is done in preparation for a meta-analysis of multiple gene expression stud
 
 \references{
 
-    Bolstad B. M., 2004.  \emph{Low-level Analysis of High-density Oligonucleotide Array Data: Background, Normalization and Summarization}, PhD dissertation, U.C. Berkeley.
+    Bolstad B. M. (2004),  \emph{Low-level Analysis of High-density Oligonucleotide Array Data: Background, Normalization and Summarization}, PhD dissertation, U.C. Berkeley.
 
-    Hu P., Greenwood C.M.T., and Beyene J. (2006), \emph{Integrative Analysis of Gene Expression Data Including an Assessment of Pathway Enrichment for Predicting Prostate Cancer}, 
+    Hu P., Greenwood C.M.T., and Beyene J. (2006), Integrative Analysis of Gene Expression Data Including an Assessment of Pathway Enrichment for Predicting Prostate Cancer, 
       \emph{Cancer Informatics} 2006:2 289-300.
+
+    Stevens J.R. and Nicholas G. (2009), metahdep: Meta-analysis of hierarchically dependent gene expression studies,
+     \emph{Bioinformatics}, 25(19):2619-2620.
 
     See also the \emph{metahdep} package vignette.
 
