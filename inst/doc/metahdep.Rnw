@@ -4,7 +4,7 @@
 %\VignettePackage{metahdep}
 \documentclass[12pt, a4paper]{article}
 
-\title{Description of metahdep: an R package for hierarchical dependence in meta-analysis}
+\title{Vignette for metahdep: an R package for hierarchical dependence in meta-analysis}
 \author{John R. Stevens$^1$ and Gabriel Nicholas$^2$}
 
 \SweaveOpts{echo=TRUE}
