@@ -351,7 +351,7 @@ function(ES.obj.list, newnames, min.var = 0.0001,
         #####################################################
         ##   BUILD M
         #####################################################
-        max.k <- 1
+        max.k <- 0   # in metahdep version 1.11.1, this was changed from 1 to 0
         block.offset <- 0
 
         ##  if all observed differential expression measures come from the same dependence group, or

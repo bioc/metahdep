@@ -21,7 +21,7 @@
 
 
 \begin{center}
-1. Assistant Professor of Statistics, Department of Mathematics and Statistics, and Center for Integrated Biosystems, Utah State University (\verb7http://www.stat.usu.edu/~jrstevens7)\\
+1. Associate Professor of Statistics, Department of Mathematics and Statistics, and Center for Integrated Biosystems, Utah State University (\verb7http://www.stat.usu.edu/~jrstevens7)\\
 2. MS Biostatistician, Department of Biostatistics and Medical Informatics, University of Wisconsin at Madison\\
 \end{center}
 
