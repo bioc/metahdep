@@ -1,7 +1,7 @@
 Package: metahdep
 Type: Package
 Title: Hierarchical Dependence in Meta-Analysis
-Version: 1.49.0
+Version: 1.50.0
 Date: 2011-09-15
 Author: John R. Stevens, Gabriel Nicholas
 Maintainer: John R. Stevens <john.r.stevens@usu.edu>
